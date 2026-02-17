@@ -1,0 +1,31 @@
+
+package holamundo;
+import java.util.*;
+/**
+ *
+ * @author Andres
+ */
+public class HolaMundo {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        String lluvia;
+        //Saludar al mundo  
+        System.out.println("Hola mundo. Bienvenidos a PROGCOM-B");
+        System.out.println("esta lloviendo?");
+        //Estamos definiendo un objeto tipo scaner
+        Scanner pepecadena = new Scanner(System.in);
+        lluvia=pepecadena.nextLine();
+        
+        System.out.println("tu respuesta fue:" +lluvia);
+        
+        if(lluvia.equals("si")) {
+            System.out.println("Use sombrilla. guarde la ropa");     
+        }else{
+            System.out.println.("salga tranquilo");
+        }
+    }
+    
+}
