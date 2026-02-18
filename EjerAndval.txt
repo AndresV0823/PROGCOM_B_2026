@@ -1,0 +1,145 @@
+
+ejer 1
+package ejercicios.clase;
+
+import java.util.*;
+/**
+ *
+ * @author Andres Valencia
+ */
+public class EjerciciosClase {
+public static void main(String[] args) {
+
+Scanner pepecadena = new Scanner(System.in);
+
+int base;
+int altura;
+int area;
+
+System.out.println("Digite la base:");
+base = pepecadena.nextInt();
+
+System.out.println("Digite la altura:");
+altura = pepecadena.nextInt();
+
+area = (base * altura) / 2;
+
+System.out.println("El area es: " + area);
+}
+}
+
+ejer 2
+package ejercicios.clase;
+
+import java.util.*;
+
+public class EjerciciosClase {
+public static void main(String[] args) {
+
+Scanner pepecadena = new Scanner(System.in);
+
+int c;
+int f;
+
+System.out.println("Digite grados Celsius:");
+c = pepecadena.nextInt();
+
+f = (c * 9/5) + 32;
+
+System.out.println("Fahrenheit: " + f);
+}
+}
+
+
+ejer 3
+package ejercicios.clase;
+
+import java.util.*;
+
+public class EjerciciosClase {
+public static void main(String[] args) {
+
+Scanner pepecadena = new Scanner(System.in);
+
+int n1;
+int n2;
+int n3;
+int prom;
+
+System.out.println("Numero 1:");
+n1 = pepecadena.nextInt();
+
+System.out.println("Numero 2:");
+n2 = pepecadena.nextInt();
+
+System.out.println("Numero 3:");
+n3 = pepecadena.nextInt();
+
+prom = (n1 + n2 + n3) / 3;
+
+System.out.println("El promedio es: " + prom);
+}
+}
+
+ejer 4
+package ejercicios.clase;
+
+import java.util.*;
+
+public class EjerciciosClase {
+public static void main(String[] args) {
+
+Scanner pepecadena = new Scanner(System.in);
+
+double radio;
+double area;
+double perimetro;
+double pi = 3.14; 
+
+System.out.println("Digite el radio:");
+radio = pepecadena.nextInt();
+
+area = pi * radio * radio;
+perimetro = 2 * pi * radio;
+
+System.out.println("Area: " + area);
+System.out.println("Perimetro: " + perimetro);
+}
+}
+
+
+ejer 5
+package ejercicios.clase;
+
+import java.util.*;
+
+public class EjerciciosClase {
+public static void main(String[] args) {
+
+Scanner pepecadena = new Scanner(System.in);
+
+int a;
+int b;
+int c;
+int d;
+int x1;
+int x2;
+
+System.out.println("Digite a:");
+a = pepecadena.nextInt();
+
+System.out.println("Digite b:");
+b = pepecadena.nextInt();
+
+System.out.println("Digite c:");
+c = pepecadena.nextInt();
+
+d = (b*b) - (4*a*c);
+
+x1 = (-b + (int)Math.sqrt(d)) / (2*a);
+x2 = (-b - (int)Math.sqrt(d)) / (2*a);
+
+System.out.println("x1 = " + x1);
+System.out.println("x2 = " + x2);
+}
+}
