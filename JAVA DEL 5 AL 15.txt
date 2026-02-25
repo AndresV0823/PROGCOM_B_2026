@@ -1,0 +1,179 @@
+Andres Valencia U00181537
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        PepeCadena pepeCadena = new PepeCadena(System.in);
+
+        // 5. Cuadratica
+        System.out.print("Ingrese el valor de a: ");
+        double a = pepeCadena.nextDouble();
+        System.out.print("Ingrese el valor de b: ");
+        double b = pepeCadena.nextDouble();
+        System.out.print("Ingrese el valor de c: ");
+        double c = pepeCadena.nextDouble();
+
+        double d = b * b - 4 * a * c;
+
+        if (d > 0) {
+            System.out.println("La ecuación tiene dos soluciones reales");
+        } else if (d == 0) {
+            System.out.println("La ecuación tiene una solución real");
+        } else {
+            System.out.println("La ecuación no tiene soluciones reales");
+        }
+
+        // 6. Par o Impar
+        System.out.print("Ingrese un número entero: ");
+        int n = pepeCadena.nextInt();
+
+        if (n % 2 == 0) {
+            System.out.println("El número es par");
+        } else {
+            System.out.println("El número es impar");
+        }
+
+        // 7. Año Bisiesto
+        System.out.print("Ingrese un año: ");
+        int anio = pepeCadena.nextInt();
+
+        if ((anio % 4 == 0 && anio % 100 != 0) || anio % 400 == 0) {
+            System.out.println("El año es bisiesto");
+        } else {
+            System.out.println("El año no es bisiesto");
+        }
+
+        // 8. Prioridad en Fila
+        System.out.print("Ingrese su nombre: ");
+        String nombre = pepeCadena.next();
+
+        System.out.print("Ingrese su edad: ");
+        int edad = pepeCadena.nextInt();
+
+        if (edad >= 70) {
+            System.out.println(nombre + " tiene prioridad en la fila");
+        } else {
+            System.out.println(nombre + " no tiene prioridad en la fila");
+        }
+
+        // 9. Mayor de Tres Numeros
+        System.out.print("Ingrese el primer número: ");
+        int num1 = pepeCadena.nextInt();
+
+        System.out.print("Ingrese el segundo número: ");
+        int num2 = pepeCadena.nextInt();
+
+        System.out.print("Ingrese el tercer número: ");
+        int num3 = pepeCadena.nextInt();
+
+        int mayor = num1;
+
+        if (num2 > mayor) mayor = num2;
+        if (num3 > mayor) mayor = num3;
+
+        System.out.println("El número mayor es: " + mayor);
+
+        // 10. Tipos de Triangulo
+        System.out.print("Ingrese el primer lado: ");
+        int t1 = pepeCadena.nextInt();
+
+        System.out.print("Ingrese el segundo lado: ");
+        int t2 = pepeCadena.nextInt();
+
+        System.out.print("Ingrese el tercer lado: ");
+        int t3 = pepeCadena.nextInt();
+
+        if (t1 == t2 && t2 == t3) {
+            System.out.println("El triángulo es equilátero");
+        } else if (t1 == t2 || t1 == t3 || t2 == t3) {
+            System.out.println("El triángulo es isósceles");
+        } else {
+            System.out.println("El triángulo es escaleno");
+        }
+
+        // 11. IMC
+        System.out.print("Ingrese su nombre: ");
+        String nombre2 = pepeCadena.next();
+
+        System.out.print("Ingrese su peso en kg: ");
+        double peso = pepeCadena.nextDouble();
+
+        System.out.print("Ingrese su altura en metros: ");
+        double altura = pepeCadena.nextDouble();
+
+        double imc = peso / (altura * altura);
+
+        if (imc < 18.5) {
+            System.out.println(nombre2 + ", su IMC indica bajo peso");
+        } else if (imc < 25) {
+            System.out.println(nombre2 + ", su IMC es normal");
+        } else if (imc < 30) {
+            System.out.println(nombre2 + ", su IMC indica sobrepeso");
+        } else {
+            System.out.println(nombre2 + ", su IMC indica obesidad");
+        }
+
+        // 12. Calculadora Simple
+        System.out.print("Ingrese el primer número: ");
+        double c1 = pepeCadena.nextDouble();
+
+        System.out.print("Ingrese el segundo número: ");
+        double c2 = pepeCadena.nextDouble();
+
+        System.out.print("Ingrese la operación (+ - * /): ");
+        char op = pepeCadena.next().charAt(0);
+
+        if (op == '+') System.out.println("Resultado: " + (c1 + c2));
+        else if (op == '-') System.out.println("Resultado: " + (c1 - c2));
+        else if (op == '*') System.out.println("Resultado: " + (c1 * c2));
+        else if (op == '/') System.out.println("Resultado: " + (c1 / c2));
+
+        // 13. Nota en Letra
+        System.out.print("Ingrese la nota final: ");
+        int nota = pepeCadena.nextInt();
+
+        if (nota >= 90) System.out.println("Calificación: A");
+        else if (nota >= 80) System.out.println("Calificación: B");
+        else if (nota >= 70) System.out.println("Calificación: C");
+        else if (nota >= 60) System.out.println("Calificación: D");
+        else System.out.println("Calificación: F");
+
+        // 14. Dias de la Semana
+        System.out.print("Ingrese un número del 1 al 7: ");
+        int dSemana = pepeCadena.nextInt();
+
+        if (dSemana == 1) System.out.println("Lunes");
+        else if (dSemana == 2) System.out.println("Martes");
+        else if (dSemana == 3) System.out.println("Miércoles");
+        else if (dSemana == 4) System.out.println("Jueves");
+        else if (dSemana == 5) System.out.println("Viernes");
+        else if (dSemana == 6) System.out.println("Sábado");
+        else if (dSemana == 7) System.out.println("Domingo");
+
+        // 15. Formar Triangulo
+        System.out.print("Ingrese el primer lado: ");
+        int f1 = pepeCadena.nextInt();
+
+        System.out.print("Ingrese el segundo lado: ");
+        int f2 = pepeCadena.nextInt();
+
+        System.out.print("Ingrese el tercer lado: ");
+        int f3 = pepeCadena.nextInt();
+
+        if (f1 + f2 > f3 && f1 + f3 > f2 && f2 + f3 > f1) {
+            if (f1 == f2 && f2 == f3) {
+                System.out.println("El triángulo es equilátero");
+            } else if (f1 == f2 || f1 == f3 || f2 == f3) {
+                System.out.println("El triángulo es isósceles");
+            } else {
+                System.out.println("El triángulo es escaleno");
+            }
+        } else {
+            System.out.println("Los valores no forman un triángulo");
+        }
+
+    }
+}
