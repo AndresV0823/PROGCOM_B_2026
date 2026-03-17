@@ -1,0 +1,132 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMUMPqbuFxsgLsTCg88FC1Y",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/AndresV0823/PROGCOM_B_2026/blob/main/CLASES\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#WHILE\n",
+        " 1. cuando no se sabe cuantas veces se repite una accion\n",
+        " 2. es gobernado por una condicion de parada\n",
+        " 3. es necesario una condicion inicia, la cual DEBE cambiar dentro del ciclo\n",
+        "\n",
+        " Sintaxis\n",
+        " ```\n",
+        "while (condicion):\n",
+        " codigo a repetir\n",
+        " modificacion de condicion\n",
+        "```\n",
+        "\n",
+        "**OJO**\n",
+        "la modificacion de la condicion puede darse de diferentes formas\n",
+        "\n",
+        "1. contador\n",
+        "2. un acumulador\n",
+        "3. cambio de bandera (trabajo con boleanos)\n",
+        "4. con un imp\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "rRqCjAyCsnut"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Suponer que la cantidad maxima de votantes son 10\n",
+        "#Suponer que son 5 candidatos\n",
+        "v1=0\n",
+        "v2=0\n",
+        "v3=0\n",
+        "v4=0\n",
+        "v5=0\n",
+        "vn=0\n",
+        "for votos in range(10):\n",
+        "  id=input(\"Ingrese su cc\")\n",
+        "  voto=input(\"Ingrese por quien quiere votar:\\n1.Elefante blanco\\n2.Pantera rosa\\n3.JP\\n4.Paloma\\n5.Quevedo\\n6.voto en blanco\")\n",
+        "  if voto==1: v1+=1\n",
+        "  elif voto==2: v2+=1\n",
+        "  elif voto==3: v3+=1\n",
+        "  elif voto==4: v4+=1\n",
+        "  elif voto==5: v5+=1\n",
+        "  elif voto==6: vb+=1\n",
+        "  else: vn+=1\n",
+        "  print(\"Gracias por su voto. \\n\")\n",
+        "print(f\"RESULTADO\\nElefante blanco:{v1}\\nPantera Rosa:{v2}\\nJP:{v3}\\nPaloma:{v4}\\nQuevedo:{v5}\\nvoto en blnaco:{vb}\")"
+      ],
+      "metadata": {
+        "id": "2Z_vWyyou801"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "figura = [\"angelitos\", \"estrella fugaz\", \"dinosaurios\", \"diablitos\"]\n",
+        "cantidad = [4, 2, 5, 3]\n",
+        "\n",
+        "# recorrer listas\n",
+        "for elemento in range(len(figura)):\n",
+        "  print(figura[elemento], \":\", cantidad[elemento])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "fIJ0SDn17bt5",
+        "outputId": "41548c5f-e109-4f59-e568-a2de90dc639d"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "angelitos : 4\n",
+            "estrella fugaz : 2\n",
+            "dinosaurios : 5\n",
+            "diablitos : 3\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
